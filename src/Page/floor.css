@@ -1,0 +1,78 @@
+
+  .calendar {
+    border: 1px solid #ccc;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+  }
+  
+  .calendar-header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f0f0f0;
+    padding: 8px;
+  }
+  
+  .calendar-header-day {
+    width: 50px;
+    text-align: center;
+  }
+  
+  .calendar-days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 1px;
+    background-color: #f9f9f9;
+    padding: 8px;
+  }
+  
+  .calendar-day {
+    width: 100%;
+    height: 160px;
+    line-height: 30px;
+    text-align: center;
+    border: 1px solid #ccc;
+  }
+  
+  .empty {
+    background-color: #f0f0f0;
+  }
+  .input-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px; /* กำหนดความกว้างสูงสุด */
+    margin: 0 auto;
+  }
+  .input-container input[type="date"] {
+    /* กำหนดความกว้างของ input เพื่อให้เต็มพื้นที่ที่กำหนดไว้ */
+    width: 100%;
+  }
+  
+  .input-container label {
+    /* ย่อขนาด font ของ label เพื่อให้พอดีกับพื้นที่ */
+    font-size: 14px;
+  }
+  
+  /* เพิ่มเติมเพื่อให้ปุ่มเต็มพื้นที่ตามขนาดจอ */
+  .input-container Button {
+    width: 100%;
+  }
+  .custom-button {
+    height: 50px;
+    margin-bottom: 5px;
+    font-size: 16px;
+  }
+
+  .calendar-day.selected {
+    background-color: blue;
+    color: white;
+  }
+  
+  /* สำหรับปุ่มในส่วนหัวของปฏิทิน */
+  .calendar-header button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 0 4px;
+  }
